@@ -9,7 +9,7 @@ resource "aws_s3_bucket" "europa" {
 
 # Bucket en Virginia (usa provider con alias)
 resource "aws_s3_bucket" "virginia" {
-  bucket = "lab-cap06-virginia-${random_id.sufijo-hex}"
+  bucket = "lab-cap06-virginia-${random_id.sufijo.hex}"
   provider = aws.virginia
 }
 
